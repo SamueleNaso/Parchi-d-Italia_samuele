@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parco Nazionale del Gran Paradiso</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/gran_paradiso.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  padding: 20px 0;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 50px;
+  color: var(--color-text-dark);
+  text-decoration: none;
+}
+.nav-link--home {
+  font-size: 64px;
+  font-weight: 700;
+}
+.nav-icon {
+  width: 71px;
+  height: 71px;
+}
+
+@media (max-width: 1200px) {
+  .main-nav {
+    gap: 20px;
+  }
+  .nav-link {
+    font-size: 32px;
+  }
+  .nav-link--home {
+    font-size: 40px;
+  }
+  .nav-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .main-nav {
+    justify-content: space-around;
+    gap: 15px;
+  }
+  .nav-link {
+    font-size: 18px;
+    gap: 8px;
+  }
+  .nav-link--home {
+    font-size: 24px;
+  }
+  .nav-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* CSS for section section:hero */
+.hero-card {
+  text-align: left;
+}
+.hero-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 67px;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+}
+.hero-subtitle {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.3;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 48px;
+  }
+  .hero-subtitle {
+    font-size: 24px;
+  }
+}
+
+/* CSS for section section:conservation */
+.conservation-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 67px;
+  line-height: 1.2;
+}
+.conservation-text {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.3;
+}
+@media (max-width: 768px) {
+  .conservation-title {
+    font-size: 48px;
+  }
+  .conservation-text {
+    font-size: 22px;
+  }
+}
+
+/* CSS for section section:visit */
+.visit-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 1.2;
+}
+.visit-text {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.3;
+}
+@media (max-width: 768px) {
+  .visit-title {
+    font-size: 40px;
+  }
+  .visit-text {
+    font-size: 22px;
+  }
+}
+
+/* CSS for section section:footer */
+.site-footer {
+  padding: 60px 0;
+}
+.related-parks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.related-parks-grid .image-card__title {
+  font-size: 29px;
+}
+.site-header {
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .nav-logo {
+        font-family: var(--font-main);
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.36;
+    }
+    .nav-links {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .nav-links a {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-family: var(--font-main);
+        font-weight: 500;
+        font-size: 58px;
+        line-height: 1.36;
+    }
+    .nav-links img {
+        width: 71px;
+        height: 71px;
+    }
+
+    @media (max-width: 1200px) {
+        .nav-logo {
+            font-size: 48px;
+        }
+        .nav-links a {
+            font-size: 40px;
+            gap: 10px;
+        }
+        .nav-links img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    @media (max-width: 992px) {
+        .main-nav {
+            justify-content: center;
+        }
+    }
+    @media (max-width: 768px) {
+        .nav-links {
+            justify-content: center;
+            width: 100%;
+            gap: 20px;
+        }
+        .nav-links a {
+            font-size: 32px;
+        }
+        .nav-links img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+/* CSS for section section:hero */
+.hero-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .hero-content-box {
+        background-color: var(--text-box-bg);
+        padding: 50px 45px;
+        position: relative;
+    }
+    .hero-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        background-color: var(--primary-green);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .hero-title {
+        font-family: var(--font-main);
+        font-weight: 700;
+        font-size: 67px;
+        line-height: 1.36;
+        margin: 0 0 20px 0;
+    }
+    .hero-subtitle {
+        font-family: var(--font-secondary);
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.28;
+        margin: 0 0 30px 0;
+    }
+    .hero-description {
+        font-family: var(--font-main);
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.36;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 48px;
+        }
+        .hero-subtitle, .hero-description {
+            font-size: 24px;
+        }
+        .hero-content-box {
+            padding: 40px 25px;
+        }
+    }
+    @media (max-width: 480px) {
+        .hero-title {
+            font-size: 36px;
+        }
+        .hero-subtitle, .hero-description {
+            font-size: 18px;
+        }
+    }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <nav class="main-nav">
+      <a href="home.html" class="nav-link nav-link--home">Home</a>
+      <a href="home.html" class="nav-link">
+        <img src="images/2066_1552.svg" alt="" class="nav-icon">
+        <span>Parchi</span>
+      </a>
+      <a href="flora_fauna.html" class="nav-link">
+        <img src="images/2056_414.svg" alt="" class="nav-icon">
+        <span>Flora e Fauna</span>
+      </a>
+      <a href="attivita.html" class="nav-link">
+        <img src="images/2056_413.svg" alt="" class="nav-icon">
+        <span>Attività</span>
+      </a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section id="hero" class="container">
+    <div class="text-card hero-card">
+      <h1 class="hero-title">Parco Nazionale del Pollino</h1>
+      <p class="hero-subtitle">Un’area montuosa tra Basilicata e Calabria, con pini loricati, gole profonde e panorami mozzafiato.</p>
+    </div>
+  </section>
+<section id="introduction" class="container content-grid">
+  <div class="text-card">
+    <p>Il Parco Nazionale del Pollino, istituito nel 1993, è il parco nazionale più grande d’Italia, con una superficie di circa 192.000 ettari. Situato tra la Basilicata e la Calabria, il parco prende il nome dal Massiccio del Pollino, una catena montuosa che raggiunge la sua massima altezza con il Monte Serra Dolcedorme (2.267 metri). Questo parco, caratterizzato da una natura selvaggia e incontaminata, è un autentico scrigno di biodiversità, paesaggi mozzafiato e tradizioni culturali radicate.</p>
+  </div>
+  <div class="image-card">
+    <h3 class="image-card__title">Parco Nazionale del Pollino</h3>
+    <div class="image-card__image-wrapper">
+      <img src="images/89637ae80c70f03d38aef1d8c5378c041321553f.png" alt="Mountain landscape of Gran Paradiso National Park" class="image-card__image">
+    </div>
+  </div>
+</section>
+<section id="landscapes" class="container content-grid">
+  <div class="image-card">
+    <h3 class="image-card__title">Monte Pollino</h3>
+    <div class="image-card__image-wrapper">
+      <img src="images/3ff5be49b4259af15cee00998ae61bb125ad7934.png" alt="Clear blue waters of Lago Nivolet" class="image-card__image">
+    </div>
+  </div>
+  <div class="text-card">
+    <h3>Montagne e paesaggi spettacolari</h3>
+    <p>Le montagne del Parco Nazionale del Pollino offrono una straordinaria varietà di paesaggi, dai pendii scoscesi e ricoperti di boschi secolari, fino alle cime rocciose che dominano il panorama. Il Monte Pollino, il Monte Serra Dolcedorme e il Monte Alpi sono tra le vette più imponenti del parco e attirano escursionisti da tutto il mondo. Il territorio del Pollino è attraversato da gole profonde e canyon, tra cui spiccano le Gole del Raganello, un’impressionante formazione naturale scavata dall’omonimo torrente. Questi paesaggi, modellati dall’erosione e dalle forze geologiche, sono una combinazione di rocce calcaree, formazioni carsiche e prati alpini, offrendo un ambiente vario e affascinante.</p>
+  </div>
+</section>
+<section id="fauna" class="container content-grid">
+  <div class="text-card">
+    <h3>Fauna emblematica</h3>
+    <p>Il Parco Nazionale del Pollino ospita una ricca biodiversità, rendendolo una delle aree naturali più preziose d’Italia. Tra i mammiferi, si possono trovare il lupo appenninico, simbolo del parco, che si aggira silenziosamente tra i boschi, e il cinghiale. Cervi e caprioli sono altre presenze comuni, mentre nelle zone più alte si avvistano aquile reali e poiane. Gli amanti dell’avifauna possono godere di un’esperienza unica, con la possibilità di osservare numerose specie di uccelli, tra cui il picchio nero e il corvo imperiale. L’habitat variegato del parco ospita anche anfibi e rettili, come la salamandra pezzata e la vipera dell’Orsini, specie tipiche delle zone montuose.</p>
+  </div>
+  <div class="image-card">
+    <h3 class="image-card__title">Cinghiale</h3>
+    <div class="image-card__image-wrapper">
+      <img src="images/89e5c4dd44b274641096c2c89a6a3177bdf624df.png" alt="An Alpine chamois standing on a rock" class="image-card__image">
+    </div>
+  </div>
+</section>
+<section id="activities" class="container content-grid">
+  <div class="image-card">
+    <h3 class="image-card__title">Piana di Pollino</h3>
+    <div class="image-card__image-wrapper">
+      <img src="images/11ac1b513816fba4bb3b6af5b2c0a89c4f042e33.png" alt="Rifugio Vittorio Emanuele II at dusk" class="image-card__image">
+    </div>
+  </div>
+  <div class="text-card">
+    <h3>Attività per i visitatori</h3>
+    <p>Il Parco Nazionale del Pollino è una destinazione ideale per gli amanti della natura e degli sport all’aria aperta. Con oltre 200 chilometri di sentieri segnalati, il parco offre opportunità per escursioni di ogni livello... Le Gole del Raganello sono una meta imperdibile per chi ama l’avventura... Durante l’inverno, il parco si trasforma in una destinazione perfetta per gli sport sulla neve.</p>
+  </div>
+</section>
+<section id="botany" class="container content-grid">
+  <div class="text-card">
+    <h3>Un patrimonio botanico unico</h3>
+    <p>Uno degli elementi più iconici del Parco del Pollino è il pino loricato, un albero raro e maestoso che cresce sulle rocce più alte e inaccessibili. Questo albero, simbolo del parco, è in grado di resistere a condizioni climatiche estreme... La flora del parco è altrettanto ricca e variegata. Le foreste di faggi, querce e aceri si alternano a prati alpini ricchi di fiori selvatici, come orchidee rare e gigli.</p>
+  </div>
+  <div class="image-card">
+    <h3 class="image-card__title">Pino Loricato</h3>
+    <div class="image-card__image-wrapper">
+      <img src="images/1d51ab60553aa6e8a8c19179f06425edde19f4fe.png" alt="Yellow Alpine poppy flowers" class="image-card__image">
+    </div>
+  </div>
+</section>
+<section id="culture" class="container content-grid">
+  <div class="image-card">
+    <h3 class="image-card__title">Monastero SanBernardino</h3>
+    <div class="image-card__image-wrapper">
+      <img src="images/667d399f0e3b496685436dd306137efae528bcba.png" alt="Wheels of Fontina DOP cheese" class="image-card__image">
+    </div>
+  </div>
+  <div class="text-card">
+    <h3>Un patrimonio storico e culturale</h3>
+    <p>Oltre alla bellezza naturale, il Parco Nazionale del Pollino è anche una terra ricca di storia e cultura. I borghi che si trovano all’interno del parco, come Civita, Morano Calabro e Rotonda, conservano un patrimonio architettonico e artistico unico... La presenza della comunità arbëreshë, discendente dagli albanesi che si stabilirono nell’area nel XV secolo, aggiunge un ulteriore strato di fascino culturale al parco.</p>
+  </div>
+</section>
+<section id="conservation" class="container">
+  <div class="text-card">
+    <h2 class="conservation-title">Conservazione e sostenibilità</h2>
+    <p class="conservation-text">Il Parco Nazionale del Pollino è un esempio virtuoso di gestione sostenibile e conservazione della biodiversità. Le attività umane, come il pascolo e l’agricoltura, sono regolamentate per ridurre l’impatto sull’ambiente e preservare gli ecosistemi. Inoltre, il parco è un luogo di ricerca scientifica, con numerosi progetti dedicati allo studio delle specie rare e alla protezione delle aree più vulnerabili.</p>
+  </div>
+</section>
+<section id="visit" class="container">
+  <div class="text-card">
+    <h2 class="visit-title">Come visitare il Parco Nazionale del Gran Pollino</h2>
+    <p class="visit-text">Il parco è facilmente accessibile da diverse località sia in Basilicata che in Calabria. I centri visita di Rotonda e Civita offrono informazioni dettagliate su sentieri, attività e attrazioni. La primavera e l’autunno sono i periodi migliori per esplorare il parco, grazie al clima mite e ai colori straordinari della natura. Tuttavia, ogni stagione offre esperienze uniche, che vanno dalle escursioni estive alle avventure invernali. Con i suoi paesaggi incontaminati, le tradizioni culturali e la straordinaria biodiversità, il Parco Nazionale del Pollino è una destinazione che incanta chiunque lo visiti. È un luogo dove la natura e la storia si incontrano, creando un’esperienza indimenticabile per gli amanti dell’ambiente e della scoperta.</p>
+  </div>
+</section>
+</main>
+<footer id="footer" class="site-footer">
+  <div class="container">
+    <div class="related-parks-grid">
+      <a href="parco_etna.html">
+      <div class="image-card">
+        <h3 class="image-card__title">ETNA</h3>
+        <div class="image-card__image-wrapper">
+          <img src="images/22b9b9b973425ec16460370f78e704836d3800eb.png" alt="Mount Etna erupting at night" class="image-card__image">
+        </div>
+      </div>
+      </a> 
+      <a href="parco_bellunesi.html">
+      <div class="image-card">
+        <h3 class="image-card__title">Dolomiti</h3>
+        <div class="image-card__image-wrapper">
+          <img src="images/df554cb84b82467cd2b7443f23e64a2f4b19b0f1.png" alt="Green landscape of Pollino National Park" class="image-card__image">
+        </div>
+      </div>
+      </a>
+         <a href="gran_paradiso.html">
+      <div class="image-card">
+        <h3 class="image-card__title">Gran Paradiso</h3>
+        <div class="image-card__image-wrapper">
+          <img src="images/93b99b9e5a755730b3a9b1d7f6807493e390b45c.png" alt="Forest in the Dolomites" class="image-card__image">
+        </div>
+      </div>
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

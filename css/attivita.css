@@ -1,0 +1,42 @@
+:root {
+  --bg-color: #cacebf;
+  --card-bg: #fafff7;
+  --primary-green: #2a5845;
+  --dark-border: #182617;
+  --text-dark: #000000;
+  --text-light: #fafff7;
+  --font-primary: 'Alegreya', serif;
+  --font-secondary: 'Stem Web', sans-serif; /* Fallback for Stem Web */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  font-family: var(--font-primary);
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

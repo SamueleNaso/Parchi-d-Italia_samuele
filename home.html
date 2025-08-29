@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .nav-logo {
+        font-family: var(--font-main);
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.36;
+    }
+    .nav-links {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .nav-links a {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-family: var(--font-main);
+        font-weight: 500;
+        font-size: 58px;
+        line-height: 1.36;
+    }
+    .nav-links img {
+        width: 71px;
+        height: 71px;
+    }
+
+    @media (max-width: 1200px) {
+        .nav-logo {
+            font-size: 48px;
+        }
+        .nav-links a {
+            font-size: 40px;
+            gap: 10px;
+        }
+        .nav-links img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    @media (max-width: 992px) {
+        .main-nav {
+            justify-content: center;
+        }
+    }
+    @media (max-width: 768px) {
+        .nav-links {
+            justify-content: center;
+            width: 100%;
+            gap: 20px;
+        }
+        .nav-links a {
+            font-size: 32px;
+        }
+        .nav-links img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+/* CSS for section section:hero */
+.hero-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .hero-content-box {
+        background-color: var(--text-box-bg);
+        padding: 50px 45px;
+        position: relative;
+    }
+    .hero-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        background-color: var(--primary-green);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .hero-title {
+        font-family: var(--font-main);
+        font-weight: 700;
+        font-size: 67px;
+        line-height: 1.36;
+        margin: 0 0 20px 0;
+    }
+    .hero-subtitle {
+        font-family: var(--font-secondary);
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.28;
+        margin: 0 0 30px 0;
+    }
+    .hero-description {
+        font-family: var(--font-main);
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.36;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 48px;
+        }
+        .hero-subtitle, .hero-description {
+            font-size: 24px;
+        }
+        .hero-content-box {
+            padding: 40px 25px;
+        }
+    }
+    @media (max-width: 480px) {
+        .hero-title {
+            font-size: 36px;
+        }
+        .hero-subtitle, .hero-description {
+            font-size: 18px;
+        }
+    }
+
+/* CSS for section section:gallery */
+.gallery-section {
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+    .park-card {
+        background-color: var(--primary-green);
+        border: 8px solid var(--dark-border);
+        border-radius: 26px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        color: var(--text-light);
+    }
+    .card-title {
+        font-family: var(--font-main);
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 1.36;
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+    }
+    .card-image {
+        flex-grow: 1;
+        min-height: 150px;
+    }
+    .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    @media (max-width: 1200px) {
+        .gallery-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+    }
+    @media (max-width: 600px) {
+        .gallery-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header id="header" class="site-header">
+    <div class="container">
+        <nav class="main-nav">
+            <a href="home.html" class="nav-logo">Home</a>
+            <ul class="nav-links">
+                <li>
+                    <a href="#gallery">
+                        <img src="images/2056_277.svg" alt="Parchi icon">
+                        <span>Parchi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#gallery">
+                        <span><a href="flora_fauna.html">
+                            <img src="images/2056_276.svg" alt="Flora e Fauna icon">
+                            Flora e Fauna</a> </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#gallery">
+                         <span><a href="attivita.html">
+                        <img src="images/2056_275.svg" alt="Attività icon">
+                        Attività</a></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="hero" class="hero-section">
+    <div class="container">
+        <div class="hero-content-box">
+            <div class="hero-line"></div>
+            <h2 class="hero-title">Esplora i parchi d’Italia</h2>
+            <p class="hero-subtitle">Biodiversità, paesaggi, tradizioni, natura, cultura</p>
+            <p class="hero-description">I parchi naturali italiani sono un tesoro di ecosistemi ricchi, paesaggi mozzafiato e unici legami tra uomo e ambiente. Scopri flora, fauna e le storie che rendono speciale ogni angolo protetto del nostro Paese.</p>
+        </div>
+    </div>
+</section>
+<section id="gallery" class="gallery-section">
+    <div class="container">
+        <div class="gallery-grid">
+            <article class="park-card">
+                <a href="gran_paradiso.html">
+                <div class="card-image">
+                    <img src="images/93b99b9e5a755730b3a9b1d7f6807493e390b45c.png" alt="View of Gran Paradiso park">
+                </div>
+                <h3 class="card-title">Gran Paradiso</h3>
+                </a>
+            </article>          
+            <article class="park-card">
+                <div class="card-image">
+                <a href="parco_etna.html">
+                <h3 class="card-title">ETNA</h3>        
+                    <img src="images/22b9b9b973425ec16460370f78e704836d3800eb.png" alt="View of Etna park">
+                 </a>
+                </div>
+            </article>
+            <article class="park-card">
+                <a href="parco_pollino.html">
+                <div class="card-image">
+                    <img src="images/643a83542d6318e6919967e76b07652318d01e93.png" alt="View of Pollino park">
+                </div>
+                <h3 class="card-title">Pollino</h3>
+                </a>
+            </article>
+            <article class="park-card">
+                <div class="card-image">
+                <a href="parco_bellunesi.html">
+                <h3 class="card-title">Dolomiti</h3>
+                
+                    <img src="images/df554cb84b82467cd2b7443f23e64a2f4b19b0f1.png" alt="View of Dolomiti park">
+                </a>
+                </div>
+                
+            </article>
+        </div>
+    </div>
+</section>
+</body>
+</html>

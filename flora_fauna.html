@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flora e Fauna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/flora_fauna.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  padding: 38px 0;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 58px;
+}
+.nav-link--home {
+  font-size: 64px;
+  font-weight: 700;
+}
+.nav-icon {
+  width: 71px;
+  height: 71px;
+}
+
+@media (max-width: 992px) {
+  .main-nav {
+    gap: 40px;
+  }
+  .nav-link {
+    font-size: 36px;
+  }
+  .nav-link--home {
+    font-size: 42px;
+  }
+  .nav-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    gap: 20px;
+    justify-content: space-around;
+  }
+  .nav-link {
+    font-size: 24px;
+  }
+  .nav-link--home {
+    font-size: 28px;
+  }
+  .nav-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* CSS for section section:hero */
+.hero-section {
+  padding: 35px 0 83px;
+}
+.hero-content {
+  background-color: var(--card-bg-light);
+  padding: 35px 27px;
+  border-top: 20px solid var(--primary-green);
+}
+.hero-title {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 67px;
+  line-height: 1.36;
+  margin-bottom: 28px;
+}
+.hero-subtitle {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.28;
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    padding-bottom: 60px;
+  }
+  .hero-title {
+    font-size: 48px;
+  }
+  .hero-subtitle {
+    font-size: 24px;
+  }
+}
+
+/* CSS for section section:gran-paradiso */
+.content-section {
+  padding-bottom: 74px;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: 502fr 773fr;
+  gap: 66px;
+  align-items: start;
+}
+
+@media (max-width: 1200px) {
+  .content-grid {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-section {
+    padding-bottom: 40px;
+  }
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CSS for section section:etna */
+.content-grid--reverse {
+  grid-template-columns: 773fr 502fr;
+}
+
+@media (max-width: 1200px) {
+  .content-grid--reverse {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-grid--reverse {
+    grid-template-columns: 1fr;
+  }
+  .content-grid--reverse > .text-card {
+    order: 1;
+  }
+  .content-grid--reverse > .image-card {
+    order: 2;
+  }
+}
+
+/* CSS for section section:gallery */
+.gallery-section {
+  padding-bottom: 160px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 84px;
+  justify-content: center;
+}
+.gallery-card {
+  background-color: var(--primary-green);
+  border: 8px solid var(--dark-border);
+  border-radius: 26px;
+  color: var(--text-light);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.gallery-card__image-wrapper {
+  height: 206px;
+  overflow: hidden;
+}
+.gallery-card__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-card__title {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 29px;
+  text-align: center;
+  padding: 16px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .gallery-grid {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <nav class="main-nav">
+
+     <a href="home.html" class="nav-link nav-link--home">Home</a>
+
+      <a href="home.html" class="nav-link">
+        <img src="images/2066_1245.svg" alt="" class="nav-icon">
+        <span>Parchi</span>
+      </a>
+      <a href="flora_fauna.html" class="nav-link">
+        <img src="images/2066_1244.svg" alt="" class="nav-icon">
+        <span>Flora e Fauna</span>
+      </a>
+      <a href="attivita.html" class="nav-link">
+        <img src="images/2066_1243.svg" alt="" class="nav-icon">
+        <span>Attività</span>
+      </a>
+    </nav>
+  </div>
+</header>
+<section id="hero" class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">Flora e fauna</h1>
+      <p class="hero-subtitle">Una panoramica sulla flora e fauna dei principali parchi italiani, tra specie rare, simboli e habitat unici</p>
+    </div>
+  </div>
+</section>
+<section id="gran-paradiso" class="content-section">
+  <div class="container">
+    <div class="content-grid">
+      <div class="image-card">
+        <h2 class="image-card__title">Lago Nivolet</h2>
+        <!--merged image-->
+        <div class="image-card__image-wrapper">
+          <img src="images/82f2805455d44dcc486ef3e6387e1708a335f5f6.png" alt="Lago Nivolet" style="position: absolute; top: 0; left: 0;">
+          <img src="images/5506258d2f966e0cd4e0d43a8a45f4abe10499bb.png" alt="Stambecco" style="position: relative;">
+        </div>
+      </div>
+      <div class="text-card">
+        <h2 class="text-card__title">Lo stambecco e i grandi abitanti del Gran Paradiso</h2>
+        <p class="text-card__content">Il Parco Nazionale del Gran Paradiso ospita una straordinaria varietà di fauna alpina. Simbolo del parco è lo stambecco, salvato dall’estinzione e oggi facilmente avvistabile. Accanto a lui, la marmotta, con i suoi fischi inconfondibili, popola i prati alpini. Nei cieli, l’aquila reale regna sovrana, offrendo spettacolari voli tra le cime. La flora è altrettanto ricca, con praterie punteggiate da genziane, stelle alpine e rododendri. Gli ambienti variano dai boschi di larici e abeti alle aree glaciali, creando un habitat ideale per questa biodiversità unica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="etna" class="content-section">
+  <div class="container">
+    <div class="content-grid content-grid--reverse">
+      <div class="text-card">
+        <h2 class="text-card__title">Ginestre vulcaniche e rapaci sulle pendici dell’Etna</h2>
+        <p class="text-card__content">Il Parco dell’Etna offre una biodiversità sorprendente, nonostante l’asprezza del terreno vulcanico. Le pendici del vulcano sono colonizzate dalla ginestra dell’Etna, una pianta resistente che fiorisce su terreni lavici, creando un contrasto spettacolare. Tra gli animali, la volpe rossa è una presenza comune, spesso avvistata lungo i sentieri. Nei cieli vola il falco pellegrino, simbolo di agilità e potenza. I boschi di querce e castagni ospitano una ricca fauna, mentre le fasce altitudinali più elevate offrono un paesaggio lunare unico.</p>
+      </div>
+      <div class="image-card">
+        <h2 class="image-card__title">Volpe rossa</h2>
+        <!--merged image-->
+        <div class="image-card__image-wrapper">
+          <img src="images/32b35501ab57da58df1c9ba69a21e3fd5fdfbb47.png" alt="Wild Chamois" style="position: absolute; top: 0; left: 0;">
+          <img src="images/a6bdc2593e5204c915d17af6092f11a46db834e0.png" alt="Volpe rossa" style="position: relative;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="pollino" class="content-section">
+  <div class="container">
+    <div class="content-grid">
+      <div class="image-card">
+        <h2 class="image-card__title" style="font-size: 36px;">Lupo Alpenninico</h2>
+        <div class="image-card__image-wrapper">
+          <img src="images/d1889d234a7b9b28336d858e97bb168a2bb30734.png" alt="Lupo Alpenninico">
+        </div>
+      </div>
+      <div class="text-card">
+        <h2 class="text-card__title" style="font-size: 34px;">Il pino loricato e il lupo appenninico del Pollino</h2>
+        <p class="text-card__content">Il Parco Nazionale del Pollino è noto per il suo simbolo botanico, il pino loricato, che si erge maestoso sulle rocce calcaree. Questa specie rara, con la sua corteccia a scaglie, è un monumento vivente. Tra gli animali, spicca il lupo appenninico, che si aggira silenzioso tra i boschi, e il cervo, visibile nelle radure. Le praterie ospitano orchidee selvatiche, che colorano il paesaggio con tonalità vivaci. Questa varietà di flora e fauna riflette la straordinaria biodiversità di uno dei parchi più selvaggi d’Italia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="dolomiti" class="content-section">
+  <div class="container">
+    <div class="content-grid content-grid--reverse">
+      <div class="text-card">
+        <h2 class="text-card__title" style="font-size: 30px;">Stelle alpine e farfalle rare delle Dolomiti Bellunesi</h2>
+        <p class="text-card__content">Le Dolomiti Bellunesi sono un paradiso di biodiversità. Tra i prati alpini fiorisce la stella alpina, simbolo delle montagne, accompagnata da genziane e gigli. Il camoscio alpino è un abitante caratteristico delle alte quote, mentre nei boschi si possono avvistare cervi e caprioli. Tra gli insetti, spiccano le farfalle rare, che trovano rifugio nei microambienti del parco. Le foreste di faggi e abeti rossi, insieme ai pendii rocciosi, creano un ecosistema unico, ideale per la sopravvivenza di molte specie endemiche delle Dolomiti.</p>
+      </div>
+      <div class="image-card">
+        <h2 class="image-card__title">Parnassius apollo</h2>
+        <!--merged image-->
+        <div class="image-card__image-wrapper">
+          <img src="images/73883cbe7265123860c7535f9814c3f112d09bda.png" alt="Papavero alpino retico" style="position: absolute; top: 0; left: 0;">
+          <img src="images/aeb84708eb0da04a28610c82c39d1adfc6f10351.png" alt="Parnassius apollo butterfly" style="position: relative;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <a href="gran_paradiso.html">
+        <div class="gallery-card__image-wrapper">
+          <img src="images/93b99b9e5a755730b3a9b1d7f6807493e390b45c.png" alt="Gran Paradiso landscape">
+        </div>
+        <h3 class="gallery-card__title">Gran Paradiso</h3>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="parco_etna.html">
+        <div class="gallery-card__image-wrapper">
+          <img src="images/22b9b9b973425ec16460370f78e704836d3800eb.png" alt="Etna volcano eruption at night">
+        </div>
+        <h3 class="gallery-card__title">ETNA</h3>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="parco_pollino.html">
+        <div class="gallery-card__image-wrapper">
+          <img src="images/643a83542d6318e6919967e76b07652318d01e93.png" alt="Pollino park landscape">
+        </div>
+        <h3 class="gallery-card__title">Pollino</h3>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="parco_bellunesi.html">
+        <div class="gallery-card__image-wrapper">
+          <img src="images/df554cb84b82467cd2b7443f23e64a2f4b19b0f1.png" alt="Dolomiti forest">
+        </div>
+        <h3 class="gallery-card__title">Dolomiti</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

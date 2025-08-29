@@ -1,0 +1,38 @@
+:root {
+    --bg-color: #cacebf;
+    --text-box-bg: #fafff7;
+    --primary-green: #2a5845;
+    --dark-border: #182617;
+    --text-dark: #000000;
+    --text-light: #fafff7;
+    --font-main: 'Alegreya', serif;
+    --font-secondary: 'Stem Web', sans-serif;
+    --font-tertiary: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    font-family: var(--font-main);
+    color: var(--text-dark);
+}
+
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 43px;
+    padding-right: 43px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

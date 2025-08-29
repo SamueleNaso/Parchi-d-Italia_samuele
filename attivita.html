@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attività</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/attivita.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  padding: 38px 0;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 58px;
+  color: var(--text-dark);
+}
+.nav-home {
+  font-weight: 700;
+  font-size: 64px;
+}
+.nav-icon {
+  width: 71px;
+  height: 71px;
+}
+
+@media (max-width: 1200px) {
+  .nav-item {
+    font-size: 40px;
+    gap: 10px;
+  }
+  .nav-home {
+    font-size: 48px;
+  }
+  .nav-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    font-size: 32px;
+  }
+  .nav-home {
+    font-size: 40px;
+  }
+  .nav-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* CSS for section section:hero */
+.hero-section {
+  padding-top: 55px; /* approx 173 - (38+78) */
+}
+.hero-content {
+  background-color: var(--card-bg);
+  padding: 35px 27px;
+  border-top: 20px solid var(--primary-green);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.hero-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 67px;
+  line-height: 1.36;
+  margin-bottom: 5px;
+}
+.hero-subtitle {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.29;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 48px;
+  }
+  .hero-subtitle {
+    font-size: 24px;
+  }
+}
+
+/* CSS for section section:activities */
+.activities-section {
+  padding: 62px 0;
+}
+.activity-row {
+  display: flex;
+  gap: 58px;
+  align-items: stretch;
+  margin-bottom: 120px;
+}
+.activity-row:last-child {
+  margin-bottom: 0;
+}
+
+.image-card {
+  background-color: var(--primary-green);
+  border: 8px solid var(--dark-border);
+  border-radius: 26px;
+  padding: 10px 10px 15px;
+  flex: 1 1 502px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.image-card-title {
+  color: var(--text-light);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.36;
+  padding: 10px 0;
+}
+.image-card-title-small {
+  font-size: 36px;
+}
+.image-card-wrapper {
+  border-radius: 18px;
+  overflow: hidden;
+  flex-grow: 1;
+}
+.image-card-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-card {
+  background-color: var(--card-bg);
+  padding: 29px;
+  flex: 1 1 773px;
+  position: relative;
+  margin-top: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.text-card::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-color: var(--primary-green);
+}
+.text-card-title {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.29;
+  margin-bottom: 20px;
+}
+.text-card-title-large {
+  font-size: 34px;
+}
+.text-card-body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.36;
+}
+
+@media (max-width: 1024px) {
+  .activity-row {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+  .image-card, .text-card {
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .activities-section {
+    padding: 40px 0;
+  }
+  .activity-row {
+    margin-bottom: 60px;
+  }
+  .image-card-title {
+    font-size: 32px;
+  }
+  .image-card-title-small {
+    font-size: 28px;
+  }
+  .text-card-title {
+    font-size: 24px;
+  }
+  .text-card-title-large {
+    font-size: 28px;
+  }
+  .text-card-body {
+    font-size: 20px;
+  }
+}
+
+/* CSS for section section:gallery */
+.gallery-section {
+  padding: 120px 0;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  justify-content: center;
+  padding: 0 120px;
+}
+.gallery-card {
+  background-color: var(--primary-green);
+  border: 8px solid var(--dark-border);
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+.gallery-card-image-wrapper {
+  flex-grow: 1;
+}
+.gallery-card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-card-title {
+  color: var(--text-light);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 1.36;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+@media (max-width: 1200px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 40px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 60px 0;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <nav class="main-nav">
+      <a href="home.html" class="nav-item nav-home">Home</a>
+      <a href="home.html" class="nav-item">
+        <img src="images/2066_1552.svg" alt="" class="nav-icon">
+        <span>Parchi</span>
+      </a>
+      <a href="flora_fauna.html" class="nav-item">
+        <img src="images/2066_1551.svg" alt="" class="nav-icon">
+        <span>Flora e Fauna</span>
+      </a>
+      <a href="attivita.html" class="nav-item">
+        <img src="images/2066_1550.svg" alt="" class="nav-icon">
+        <span>Attività</span>
+      </a>
+    </nav>
+  </div>
+</header>
+<section id="hero" class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">Attività</h1>
+      <p class="hero-subtitle">I parchi naturali italiani offrono esperienze uniche per esplorare paesaggi straordinari: trekking panoramici, birdwatching, vulcani attivi e sentieri immersi nella biodiversità di monti e foreste.</p>
+    </div>
+  </div>
+</section>
+<section id="activities" class="activities-section">
+  <div class="container">
+    <div class="activity-row">
+      <div class="image-card">
+        <h2 class="image-card-title">Alta via delle Dolomiti</h2>
+        <!--merged image-->
+        <div class="image-card-wrapper">
+          <img src="images/4c6ed81e4b728926789e06648397530f770fd754.png" alt="View of Alta via delle Dolomiti mountains">
+        </div>
+      </div>
+      <div class="text-card">
+        <h3 class="text-card-title">Trekkings sull’Alta Via delle Dolomiti</h3>
+        <p class="text-card-body">L'Alta Via delle Dolomiti è una rete di sentieri spettacolari che attraversano cime, vallate e paesaggi mozzafiato. Ogni tappa collega rifugi alpini, offrendo un'esperienza unica tra natura incontaminata, flora endemica e panorami patrimonio UNESCO.</p>
+      </div>
+    </div>
+    <div class="activity-row">
+      <div class="text-card">
+        <h3 class="text-card-title">Birdwatching al Gran Paradiso</h3>
+        <p class="text-card-body">Il Parco Nazionale del Gran Paradiso è un paradiso per gli amanti del birdwatching. Qui puoi osservare aquile reali, gipeti, e rapaci alpini che solcano i cieli, oltre a specie migratorie rare. I punti di osservazione si trovano lungo i sentieri più tranquilli del parco.</p>
+      </div>
+      <div class="image-card">
+        <h2 class="image-card-title">Birdwatching</h2>
+        <div class="image-card-wrapper">
+          <img src="images/12e19061c0b3c09d859994ccdc4affe23fb9965e.png" alt="A bird in its natural habitat for birdwatching.">
+        </div>
+      </div>
+    </div>
+    <div class="activity-row">
+      <div class="image-card">
+        <h2 class="image-card-title image-card-title-small">Escursione dell’ Etna</h2>
+        <!--merged image-->
+        <div class="image-card-wrapper">
+          <img src="images/515b37ed8f5670c619971cd3abe9dd282f9dcbf8.png" alt="Eruption of Mount Etna volcano.">
+        </div>
+      </div>
+      <div class="text-card">
+        <h3 class="text-card-title text-card-title-large">Escursioni sui crateri dell’Etna</h3>
+        <p class="text-card-body">Esplorare l’Etna significa camminare su un vulcano vivo, circondati da paesaggi lunari e crateri fumanti. Escursioni guidate portano alla scoperta di colate laviche recenti, formazioni uniche e vedute spettacolari sul Mar Ionio e la Sicilia orientale.</p>
+      </div>
+    </div>
+    <div class="activity-row">
+      <div class="text-card">
+        <h3 class="text-card-title">Percorsi naturalistici nel Pollino</h3>
+        <p class="text-card-body">Nel Parco Nazionale del Pollino, i percorsi naturalistici conducono tra boschi di faggi, distese di pini loricati e gole profonde. Ideali per gli escursionisti, i sentieri offrono la possibilità di incontrare lupi appenninici e cervi, oltre a scoprire panorami straordinari.</p>
+      </div>
+      <div class="image-card">
+        <h2 class="image-card-title">Boschi di Faggi</h2>
+        <!--merged image-->
+        <div class="image-card-wrapper">
+          <img src="images/af18835c502404a107a2a5ded4190234ed6b999e.png" alt="A path through a beech forest.">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <div class="gallery-grid">
+      <div class="gallery-card">
+         <a href="gran_paradiso.html">
+        <div class="gallery-card-image-wrapper">
+          <img src="images/93b99b9e5a755730b3a9b1d7f6807493e390b45c.png" alt="Gran Paradiso landscape">
+        </div>
+        <h2 class="gallery-card-title">Gran Paradiso</h2>
+      </a>
+      </div>
+      <div class="gallery-card">
+        <a href="parco_etna.html">
+        <div class="gallery-card-image-wrapper">
+          <img src="images/22b9b9b973425ec16460370f78e704836d3800eb.png" alt="ETNA landscape">
+        </div>
+        <h2 class="gallery-card-title">ETNA</h2>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="parco_pollino.html">
+        <div class="gallery-card-image-wrapper">
+          <img src="images/643a83542d6318e6919967e76b07652318d01e93.png" alt="Pollino landscape">
+        </div>
+        <h2 class="gallery-card-title">Pollino</h2>
+        </a>
+      </div>
+      <div class="gallery-card">
+        <a href="parco_bellunesi.html">
+        <div class="gallery-card-image-wrapper">
+          <img src="images/df554cb84b82467cd2b7443f23e64a2f4b19b0f1.png" alt="Dolomiti landscape">
+        </div>
+        <h2 class="gallery-card-title">Dolomiti</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

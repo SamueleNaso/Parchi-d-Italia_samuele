@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parco Nazionale del Gran Paradiso</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/gran_paradiso.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+  padding: 20px 0;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 50px;
+  color: var(--color-text-dark);
+  text-decoration: none;
+}
+.nav-link--home {
+  font-size: 64px;
+  font-weight: 700;
+}
+.nav-icon {
+  width: 71px;
+  height: 71px;
+}
+
+@media (max-width: 1200px) {
+  .main-nav {
+    gap: 20px;
+  }
+  .nav-link {
+    font-size: 32px;
+  }
+  .nav-link--home {
+    font-size: 40px;
+  }
+  .nav-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .main-nav {
+    justify-content: space-around;
+    gap: 15px;
+  }
+  .nav-link {
+    font-size: 18px;
+    gap: 8px;
+  }
+  .nav-link--home {
+    font-size: 24px;
+  }
+  .nav-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* CSS for section section:hero */
+.hero-card {
+  text-align: left;
+}
+.hero-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 67px;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+}
+.hero-subtitle {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.3;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 48px;
+  }
+  .hero-subtitle {
+    font-size: 24px;
+  }
+}
+
+/* CSS for section section:conservation */
+.conservation-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 67px;
+  line-height: 1.2;
+}
+.conservation-text {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.3;
+}
+@media (max-width: 768px) {
+  .conservation-title {
+    font-size: 48px;
+  }
+  .conservation-text {
+    font-size: 22px;
+  }
+}
+
+/* CSS for section section:visit */
+.visit-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 1.2;
+}
+.visit-text {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.3;
+}
+@media (max-width: 768px) {
+  .visit-title {
+    font-size: 40px;
+  }
+  .visit-text {
+    font-size: 22px;
+  }
+}
+
+/* CSS for section section:footer */
+.site-footer {
+  padding: 60px 0;
+}
+.related-parks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.related-parks-grid .image-card__title {
+  font-size: 29px;
+}
+.site-header {
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .nav-logo {
+        font-family: var(--font-main);
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.36;
+    }
+    .nav-links {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .nav-links a {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-family: var(--font-main);
+        font-weight: 500;
+        font-size: 58px;
+        line-height: 1.36;
+    }
+    .nav-links img {
+        width: 71px;
+        height: 71px;
+    }
+
+    @media (max-width: 1200px) {
+        .nav-logo {
+            font-size: 48px;
+        }
+        .nav-links a {
+            font-size: 40px;
+            gap: 10px;
+        }
+        .nav-links img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    @media (max-width: 992px) {
+        .main-nav {
+            justify-content: center;
+        }
+    }
+    @media (max-width: 768px) {
+        .nav-links {
+            justify-content: center;
+            width: 100%;
+            gap: 20px;
+        }
+        .nav-links a {
+            font-size: 32px;
+        }
+        .nav-links img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+/* CSS for section section:hero */
+.hero-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .hero-content-box {
+        background-color: var(--text-box-bg);
+        padding: 50px 45px;
+        position: relative;
+    }
+    .hero-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        background-color: var(--primary-green);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .hero-title {
+        font-family: var(--font-main);
+        font-weight: 700;
+        font-size: 67px;
+        line-height: 1.36;
+        margin: 0 0 20px 0;
+    }
+    .hero-subtitle {
+        font-family: var(--font-secondary);
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.28;
+        margin: 0 0 30px 0;
+    }
+    .hero-description {
+        font-family: var(--font-main);
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.36;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 48px;
+        }
+        .hero-subtitle, .hero-description {
+            font-size: 24px;
+        }
+        .hero-content-box {
+            padding: 40px 25px;
+        }
+    }
+    @media (max-width: 480px) {
+        .hero-title {
+            font-size: 36px;
+        }
+        .hero-subtitle, .hero-description {
+            font-size: 18px;
+        }
+    }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <nav class="main-nav">
+      <a href="home.html" class="nav-link nav-link--home">Home</a>
+      <a href="home.html" class="nav-link">
+        <img src="images/2066_1552.svg" alt="" class="nav-icon">
+        <span>Parchi</span>
+      </a>
+      <a href="flora_fauna.html" class="nav-link">
+        <img src="images/2056_414.svg" alt="" class="nav-icon">
+        <span>Flora e Fauna</span>
+      </a>
+      <a href="attivita.html" class="nav-link">
+        <img src="images/2056_413.svg" alt="" class="nav-icon">
+        <span>Attività</span>
+      </a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section id="hero" class="container">
+    <div class="text-card hero-card">
+      <h1 class="hero-title">Parco Nazionale delle Dolomiti Bellunesi</h1>
+      <p class="hero-subtitle">Patrimonio UNESCO con cime imponenti, fiori rari come la stella alpina e paesaggi rocciosi unici.</p>
+    </div>
+  </section>
+<section id="introduction" class="container content-grid">
+  <div class="text-card">
+    <p>l Parco Nazionale delle Dolomiti Bellunesi, istituito nel 1993, si estende per oltre 31.000 ettari nella regione del Veneto, abbracciando alcune delle aree più spettacolari delle Dolomiti, riconosciute come Patrimonio dell’Umanità UNESCO. Questo parco, situato interamente nella provincia di Belluno, è famoso per le sue imponenti formazioni rocciose, le valli incontaminate e una straordinaria biodiversità che lo rendono un gioiello naturalistico di fama mondiale.</p>
+  </div>
+  <div class="image-card">
+    <h3 class="image-card__title">Parco Nazionale delle Dolomiti</h3>
+    <div class="image-card__image-wrapper">
+      <img src="images/Sass_de_mura_PNDB.png" alt="Mountain landscape of Gran Paradiso National Park" class="image-card__image">
+    </div>
+  </div>
+</section>
+<section id="landscapes" class="container content-grid">
+  <div class="image-card">
+    <h3 class="image-card__title">Monti del sole</h3>
+    <div class="image-card__image-wrapper">
+      <img src="images/f4eee983a044b47dbb48856e6e39f331acfccc45.png" alt="Clear blue waters of Lago Nivolet" class="image-card__image">
+    </div>
+  </div>
+  <div class="text-card">
+    <h3>Montagne e paesaggi pari</h3>
+    <p>Le Dolomiti Bellunesi sono celebri per la loro bellezza unica e per la varietà dei paesaggi. Il parco comprende una serie di massicci montuosi tra cui la Schiara, il Pizzocco e le Vette Feltrine, che raggiungono altezze superiori ai 2.500 metri. Le montagne sono caratterizzate da pareti verticali, guglie imponenti e vallate profonde, scolpite dall’erosione e dai ghiacciai che un tempo dominavano la zona. Tra le attrazioni più spettacolari si trovano i Monti del Sole, un'area remota e selvaggia, e le Gole del Mis, una serie di canyon spettacolari che offrono scenari suggestivi di rocce e cascate. Questi paesaggi, unici nel loro genere, rappresentano una meta privilegiata per escursionisti e appassionati di natura.</p>
+  </div>
+</section>
+<section id="fauna" class="container content-grid">
+  <div class="text-card">
+    <h3>Fauna emblematica</h3>
+    <p>Il Parco Nazionale delle Dolomiti Bellunesi è un rifugio per numerose specie animali, molte delle quali rare o protette. Tra i mammiferi, il camoscio alpino è una presenza caratteristica delle aree più alte, mentre il cervo e il capriolo popolano le zone boschive. La presenza del gallo cedrone e del picchio nero testimonia la qualità dell’ecosistema forestale del parco. Tra i rapaci, l’aquila reale e il gufo reale dominano i cieli, mentre i piccoli abitanti delle rocce, come la marmotta, completano il quadro di una fauna ricca e diversificata. L’ambiente fluviale ospita la rara trota marmorata, simbolo dell’equilibrio ecologico delle acque del parco.</p>
+  </div>
+  <div class="image-card">
+    <h3 class="image-card__title">Picchio nero</h3>
+    <div class="image-card__image-wrapper">
+      <img src="images/5736645b46d04cf55b9756a85e58c6473ea7f50e.png" alt="An Alpine chamois standing on a rock" class="image-card__image">
+    </div>
+  </div>
+</section>
+<section id="activities" class="container content-grid">
+  <div class="image-card">
+    <h3 class="image-card__title">Sentiero delle Farangole</h3>
+    <div class="image-card__image-wrapper">
+      <img src="images/8d3054e31daef72f81086f5ca996fc85db02fba0.png" alt="Rifugio Vittorio Emanuele II at dusk" class="image-card__image">
+    </div>
+  </div>
+  <div class="text-card">
+    <h3>Attività per i visitatori</h3>
+    <p>Il parco offre una vasta gamma di attività all’aria aperta, ideali per chi ama immergersi nella natura incontaminata. Con oltre 200 chilometri di sentieri, gli escursionisti possono scegliere tra percorsi di diverse difficoltà. Tra i più suggestivi c’è il Sentiero delle Farangole, che attraversa paesaggi alpini mozzafiato, e il Sentiero Dino Buzzati, un itinerario dedicato al celebre scrittore bellunese. Gli appassionati di speleologia possono esplorare alcune delle grotte più affascinanti della zona, come la Grotta Azzurra, famosa per le sue suggestive sfumature di colore, mentre chi preferisce esperienze più rilassanti può optare per una passeggiata nelle Gole del Mis, tra cascate, piscine naturali e formazioni rocciose spettacolari. In inverno, il parco offre opportunità per le ciaspolate e lo sci alpinismo, che consentono di vivere l’atmosfera magica delle Dolomiti innevate. Durante la primavera e l’estate, invece, il paesaggio si colora di fiori selvatici, rendendo i percorsi particolarmente pittoreschi.</p>
+  </div>
+</section>
+<section id="botany" class="container content-grid">
+  <div class="text-card">
+    <h3>Un patrimonio botanico straordinario</h3>
+    <p>La flora del parco è altrettanto affascinante, con una ricchezza botanica che lo rende un paradiso per gli appassionati di piante e fiori. Le Dolomiti Bellunesi ospitano circa 1.500 specie vegetali, alcune delle quali estremamente rare o endemiche. Tra queste spicca la Campanula Morettiana, una pianta che cresce esclusivamente sulle rocce dolomitiche, e la stella alpina, simbolo delle montagne alpine. Le foreste del parco sono dominate da faggi, larici e abeti rossi, mentre nei prati alpini fioriscono gigli, orchidee e genziane. Le aree umide, come quelle delle Gole del Mis, ospitano piante acquatiche e muschi, creando microambienti di grande interesse naturalistico.</p>
+  </div>
+  <div class="image-card">
+    <h3 class="image-card__title">Stella alpina</h3>
+    <div class="image-card__image-wrapper">
+      <img src="images/3e6a5f0c7405d9531bc9045140ae05651a9b9e02.png" alt="Yellow Alpine poppy flowers" class="image-card__image">
+    </div>
+  </div>
+</section>
+<section id="culture" class="container content-grid">
+  <div class="image-card">
+    <h3 class="image-card__title">Formaggio Piave DOP</h3>
+    <div class="image-card__image-wrapper">
+      <img src="images/2254d1b6308ba09da5b7c133746b3cae6fe3456f.png" alt="Wheels of Fontina DOP cheese" class="image-card__image">
+    </div>
+  </div>
+  <div class="text-card">
+    <h3>Un patrimonio storico e culturale</h3>
+    <p>Il Parco Nazionale delle Dolomiti Bellunesi non è solo natura, ma anche storia e cultura. I villaggi che circondano il parco, come Feltre, Sospirolo e Cesiomaggiore, conservano un ricco patrimonio architettonico e tradizioni antiche. Questi borghi offrono la possibilità di visitare chiese, castelli e musei che raccontano la storia della regione. L’eredità culturale del parco si riflette anche nei suoi prodotti tipici, come il formaggio Piave DOP, che prende il nome dall’omonimo fiume che scorre nella zona, e la polenta di mais Sponcio, un alimento tradizionale delle Dolomiti.</p>
+  </div>
+</section>
+<section id="conservation" class="container">
+  <div class="text-card">
+    <h2 class="conservation-title">Conservazione e sostenibilità</h2>
+    <p class="conservation-text">Il parco è un modello di conservazione ambientale e gestione sostenibile. Come parte del Patrimonio UNESCO, il Parco Nazionale delle Dolomiti Bellunesi è impegnato nella protezione della biodiversità e nella promozione di un turismo responsabile. Le attività umane, come il pascolo e la silvicoltura, sono regolate per minimizzare l’impatto sull’ambiente, garantendo un equilibrio tra uomo e natura.</p>
+  </div>
+</section>
+<section id="visit" class="container">
+  <div class="text-card">
+    <h2 class="visit-title">Come visitare il Parco Nazionale delle Dolomiti Bellunesi</h2>
+    <p class="visit-text">Il parco è facilmente raggiungibile da Belluno e Feltre, con diversi punti di accesso che offrono informazioni turistiche e servizi per i visitatori. Tra questi, il Centro Visite di Pedavena e il Centro Visite La Santina, dove è possibile ottenere mappe, consigli sui percorsi e dettagli sugli eventi stagionali. La primavera e l’autunno sono i periodi migliori per visitare il parco, grazie ai colori spettacolari della natura e al clima mite. Tuttavia, ogni stagione ha il suo fascino: l’estate è ideale per il trekking, mentre l’inverno regala l’incanto delle Dolomiti innevate. Con i suoi paesaggi unici, la straordinaria biodiversità e il ricco patrimonio culturale, il Parco Nazionale delle Dolomiti Bellunesi rappresenta una destinazione imperdibile per chiunque voglia scoprire la bellezza autentica delle Dolomiti. Un luogo dove natura e cultura si fondono, regalando esperienze indimenticabili.</p>
+  </div>
+</section>
+</main>
+<footer id="footer" class="site-footer">
+  <div class="container">
+    <div class="related-parks-grid">
+      <a href="parco_etna.html">
+      <div class="image-card">
+        <h3 class="image-card__title">ETNA</h3>
+        <div class="image-card__image-wrapper">
+          <img src="images/22b9b9b973425ec16460370f78e704836d3800eb.png" alt="Mount Etna erupting at night" class="image-card__image">
+        </div>
+      </div>
+      </a> 
+      <a href="parco_pollino.html">
+      <div class="image-card">
+        <h3 class="image-card__title">Pollino</h3>
+        <div class="image-card__image-wrapper">
+          <img src="images/643a83542d6318e6919967e76b07652318d01e93.png" alt="Green landscape of Pollino National Park" class="image-card__image">
+        </div>
+      </div>
+      </a>
+         <a href="gran_paradiso.html">
+      <div class="image-card">
+        <h3 class="image-card__title">Gran Paradiso</h3>
+        <div class="image-card__image-wrapper">
+          <img src="images/93b99b9e5a755730b3a9b1d7f6807493e390b45c.png" alt="Forest in the Dolomites" class="image-card__image">
+        </div>
+      </div>
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
